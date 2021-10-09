@@ -82,23 +82,7 @@ class _State extends State<MyApp> {
                         print(passwordController.text);
                       },
                     )),
-                Container(
-                  child: Row(
-                    children: <Widget>[
-                      Text('Does not have account?'),
-                      FlatButton(
-                        textColor: Colors.blue,
-                        child: Text(
-                          'Sign in',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        onPressed: () {
-                          //signup screen
-                        },
-                      )
-                    ],
-                    mainAxisAlignment: MainAxisAlignment.center,
-                ))
+
               ],
             )));
   }
