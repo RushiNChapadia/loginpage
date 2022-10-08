@@ -14,3 +14,14 @@ extension HexColor on Color {
       '${green.toRadixString(16).padLeft(2, '0')}'
       '${blue.toRadixString(16).padLeft(2, '0')}';
 }
+
+
+String stringColor = "Color(0xff000000)";
+String valueString =
+    stringColor.split('(0x')[1].split(')')[0]; // kind of hacky..
+print(valueString);
+int value = int.parse(valueString, radix: 16);
+print(value);
+Color otherColor = new Color(value);
+print(otherColor);
+print(otherColor.runtimeType);
