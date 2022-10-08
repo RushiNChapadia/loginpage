@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
 }  
   
 class MyIconPage extends StatefulWidget {  
-  @override  
-  _MyIconPageState createState() => _MyIconPageState();  
+   
 }  
   
 class _MyIconPageState extends State<MyIconPage> {  
@@ -35,5 +34,9 @@ class _MyIconPageState extends State<MyIconPage> {
             Icon(Icons.camera_rear),  
       ]),  
     );  
+    class MyIconPage extends StatefulWidget {  
+  @override  
+  _MyIconPageState createState() => _MyIconPageState();  
+}  
   }  
 }  
