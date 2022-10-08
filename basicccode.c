@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
+void main() async {
+  // Read some data.
+  final fileData = await _readFileAsync();
+  final jsonData = jsonDecode(fileData);
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  // Use that data.
+  print('Number of JSON keys: ${jsonData.length}');
+}
 
-</body>
-</html>
+Future<String> _readFileAsync() async {
+  final file = File(filename);
+  final contents = await file.readAsString();
+  return contents.trim();
+}
